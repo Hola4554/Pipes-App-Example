@@ -1,0 +1,80 @@
+
+<p-panel header="Pipes Básicos" class="p-1">
+
+  <p>
+    Pipes incluídos en Angular - Usualmente en el Common Module
+  </p>
+
+</p-panel>
+
+
+<div class="grid ">
+
+  <div class="col-12 md:col-4">
+    <p-card header="UpperCase">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Lowecasse">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="TitleCase">
+      {{ nameTitleCase | titlecase }}
+    </p-card>
+  </div>
+
+
+  <div class="col-12 md:col-6">
+    <p-card header="TitleCase">
+
+      <ol>
+        <li> fecha </li>
+        <li> fecha | date </li>
+        <li> fecha | date:'short' </li>
+        <li> fecha | date:'long' </li>
+        <li> fecha | date:'MMMM' </li>
+        <li> fecha | date:'MMMM dd, yyyy' </li>
+      </ol>
+
+      <hr>
+
+      <ol>
+        <li> fecha | date:'long':'GMT-6'</li>
+        <li> fecha | date:'long':'GMT-4'</li>
+        <li> fecha | date:'long':'':'es-HN' </li>
+        <li> fecha | date:'long':'':'en-US' </li>
+        <li> fecha | date : 'long' : '' : 'fr-CA' </li>
+      </ol>
+
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-card header="TitleCase">
+      <ol>
+        <li> {{ custonDate}} </li>
+        <li> {{ custonDate | date}} </li>
+        <li> {{ custonDate | date:'short' }} </li>
+        <li> {{ custonDate | date:'long' }} </li>
+        <li> {{ custonDate | date:'MMMM' }} </li>
+        <li> {{ custonDate | date:'MMMM dd, yyyy' }} </li>
+      </ol>
+
+      <hr>
+
+      <ol>
+        <li> {{ custonDate | date:'long':'GMT-6'}}</li>
+        <li> {{ custonDate | date:'long':'GMT-4'}}</li>
+        <li> {{ custonDate | date:'long':'':'es-MX' }} </li>
+        <li> {{ custonDate | date:'long':'':'en-US' }} </li>
+        <li> {{ custonDate | date:'long':'':'fr-CA' }} </li>
+      </ol>
+    </p-card>
+  </div>
+
+</div>
